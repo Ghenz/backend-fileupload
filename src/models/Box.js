@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 const Box = new mongoose.Schema({
-    title:{
+    title:
+    {
         type: String,
         required: true
     },
