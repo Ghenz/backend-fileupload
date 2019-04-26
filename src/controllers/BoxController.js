@@ -18,6 +18,13 @@ class BoxController{
         return res.json(box);
     }
 
+    async showPastas(req, res) {
+
+        const pastas = await Box.find({},'title');
+
+        return res.json(pastas);
+    }
+
 }
 
 module.exports = new BoxController();
